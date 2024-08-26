@@ -1,6 +1,6 @@
 def caesar_cipher(string, shift_count=0)
   shift_count %= 26
-  
+
   string.chars.map do |char|
     case char
     when 'a'..'z'
@@ -13,4 +13,4 @@ def caesar_cipher(string, shift_count=0)
   end.join
 end
 
-puts caesar_cipher("What a string!", -1)
+puts caesar_cipher('What a string!', -1)
